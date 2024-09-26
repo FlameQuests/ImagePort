@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Image Upload and Share</title>
+       <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+       <h1>Image Upload and Share</h1>
+       <form id="uploadForm">
+           <input type="file" id="imageInput" accept="image/*" required>
+           <button type="submit">Upload Image</button>
+       </form>
+       <div id="shareLink">
+           <p>Your image has been uploaded. Share this link:</p>
+           <input type="text" id="linkInput" readonly>
+           <button onclick="copyLink()">Copy Link</button>
+       </div>
+
+       <script src="script.js"></script>
+   </body>
+   </html>
